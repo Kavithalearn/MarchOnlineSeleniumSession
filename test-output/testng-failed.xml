@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="3" name="Failed suite [Hub spot App Test automation regression suite]">
+  <parameter name="browser" value="firefox"/>
+  <parameter name="url" value="https://app.hubspot.com/login"/>
+  <test thread-count="5" verbose="3" name="hub spot functional test(failed)">
+    <parameter name="password" value="Test@1234"/>
+    <parameter name="username" value="naveenanimation30@gmail.com"/>
+    <classes>
+      <class name="TestNGSessions.LoginPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="verifySignUpLinkTest"/>
+          <include name="verifyLoginPageTitleTest"/>
+        </methods>
+      </class> <!-- TestNGSessions.LoginPageTest -->
+    </classes>
+  </test> <!-- hub spot functional test(failed) -->
+</suite> <!-- Failed suite [Hub spot App Test automation regression suite] -->
